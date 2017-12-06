@@ -1,0 +1,5 @@
+<h2><%= @post.title %></h2>
+<p><%= @post.content %></p>
+<%= link_to 'edit', edit_post_path(@post) %>
+  <%=  link_to 'delete', post_path(@post), method: :delete, data: {confirm: "Are you sure you wanna do this?"} %>
+  <%= link_to "Home", root_path %>
